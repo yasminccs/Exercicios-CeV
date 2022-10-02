@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - Events</title>
+  <style>
+    body{
+      font: normal 18pt Arial;
+    }
+    input{
+      font: normal 15pt Arial;
+      width: 100px;
+    }
+    div#res{
+      margin-top: 20px;   
+    }
+    .clicarDiv{
+      font: normal 9pt arial;
+    }
+  </style>
+</head>
+
+
+<body>
+    <h1>Soma de Valores</h1>
+    <input type="number" name="text1" id="text1"> +
+    <input type="number" name="text2" id="text2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res"></div>
+    <div class="clicarDiv">Clique (só teste)</div>
+
+    <script>
+      function somar() {
+      let txt1 = document.getElementById('text1')
+      let txt2 = document.getElementById('text2')
+      let res = document.getElementById('res')
+      let n1 = Number(txt1.value)
+      let n2 = Number(txt2.value)
+      let s = n1 + n2
+      res.innerHTML = `A soma entre ${n1} e ${n2} é <strong>${s}.</strong>`
+      }
+
+      let test = document.querySelector('.clicarDiv')
+      test.addEventListener('click', clicar)
+      function clicar(evento){
+        console.log(evento)
+      }
+    </script>
+</body>
+</html> 

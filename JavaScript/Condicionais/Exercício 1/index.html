@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições #1</title>
+    <style>
+        body, input{
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas - DETRAN</h1>
+    Velocidade do carro: <input type="number" name="txt" id="txt"> Km/h <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+         function calcular(){
+            let action = document.querySelector('#txt')
+            let answer = document.querySelector('#res')
+            let nmr = Number(action.value)
+            answer.innerHTML = `<p>Sua velocidade atual é <strong>${nmr} km/h.</strong></p>`
+            if(nmr > 90){
+                answer.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade.</p>`
+            }
+            answer.innerHTML += `<p>Dirija sempre com cuidado.</p>`
+         }
+    </script>
+</body>
+</html>

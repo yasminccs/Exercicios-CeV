@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições #3</title>
+    <style>
+        body, input{
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eleições - Descubra se você pode votar!</h1>
+    Qual a sua idade? <input type="number" name="age" id="age"> <input type="button" value="verificar" onclick="verific()">
+    <div id="res"></div>
+
+    <script>
+        function verific(){
+            let txtAge = document.querySelector('#age')
+            let ans = document.querySelector('#res')
+            let nmr = Number(txtAge.value)
+            if(nmr < 16){
+                ans.innerHTML = `<p>Sua idade é ${nmr} anos.</p>`
+                ans.innerHTML += `<p>Não vota.</p>`
+            } else if(nmr < 18 || nmr > 65){
+                ans.innerHTML = `<p>Sua idade é ${nmr} anos.</p>`
+                ans.innerHTML += `<p>Voto não é obrigatório.</p>`
+            } else {
+                ans.innerHTML = `<p>Sua idade é ${nmr} anos.</p>`
+                ans.innerHTML += `<p>Voto obrigatório.</p>`
+            }
+        }
+    </script>
+</body>
+</html>

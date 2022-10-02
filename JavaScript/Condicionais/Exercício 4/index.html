@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições #4</title>
+    <style>
+        body,input {
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Horário - Cumprimentos</h1>
+    Clique no botão ao lado para mostrar seu horário atual: <input type="button" value="Verificar" onclick="enviar()">
+    <div id="res"></div>
+
+    <script>
+        function enviar(){
+            let res = document.querySelector('#res')
+            let now = new Date()
+            let hours = now.getHours()
+            if(hours < 12){
+                res.innerHTML = `<p>Sua hora atual são ${hours} horas.</p>`
+                res.innerHTML += `<p>Bom dia!</p>`
+            } else if(hours < 18){
+                res.innerHTML = `<p>Sua hora atual são ${hours} horas.</p>`
+                res.innerHTML += `<p>Boa tarde!</p>`
+            } else {
+                res.innerHTML = `<p>Sua hora atual são ${hours} horas.</p>`
+                res.innerHTML += `<p>Boa noite!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
