@@ -1,0 +1,28 @@
+body{
+    background-color: blue;
+    font: normal 1.5em arial;
+}
+
+header{
+    color: #fff;
+    text-align: center;
+}
+
+button{
+    font-size: 0.7em;
+}
+
+section{
+    width: 600px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.357);
+}
+
+footer{
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}

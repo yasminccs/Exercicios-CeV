@@ -10,7 +10,6 @@ function gerar(){
         for(let i = 1; i <= 10; i++){
             let option = document.createElement('option')
             option.text = `${n} x ${i} = ${n*i}`
-            option.value = `op${i}` //útil para outras linguagens
             res.appendChild(option)
         }
     }
