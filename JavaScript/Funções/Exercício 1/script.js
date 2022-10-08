@@ -1,16 +1,22 @@
+const arr = []
+
 function addNumber(){
-    const arr = []
-    const input = document.querySelector('#nmr').value
+    const nmr = document.querySelector("#nmr")
+    const input = Number(nmr.value)
     arr.push(input)
-    if(input === 0 || input < 1 || input > 100){
+    let indc = arr.includes(input)
+    if(indc){
         alert('Valor inválido ou já encontrado na lista.')
-    } else {
+    } 
+    else {
         const res = document.querySelector('#res')
         const options = document.createElement('option')
-        // res.innerHTML = ''
         options.innerHTML += `Valor ${input} adicionado.`
         res.appendChild(options)
     }
+
+    console.log(arr)
+    console.log(indc)
 }
 
 function final(){
