@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal 1em Verdana;
+}
+
+header{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header > h1{
+    padding: 40px 0px 0px 0px;
+    font-weight: normal;
+    font-size: 7em;
+    font-family: 'Passion One', cursive;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section.poetry{
+    padding-left: 30px;
+    font-size: 32px;
+    line-height: 62.2px;
+    font-family: 'Sriracha', cursive;
+}
+
+section#p1{
+    margin-bottom: 70px;
+}
+
+section#p2{
+    height: 100vh;
+    background: #fff url(img/background001.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+#p2>p{
+    display: inline-block;
+    color: #fff;
+    margin: 90px 0px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.491);
+}
+
+section#p3{
+    margin: 70px 0px;
+}
+#p3>p{
+    margin-bottom: 50px;
+}
+
+section#p4{
+    height: 100vh;
+    background: #fff url(img/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+#p4>p{
+    display: inline-block;
+    color: #fff;
+    margin: 90px 0px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.491);
+}
+
+section#p5{
+    margin: 70px 0px;
+}
+#p5>p{
+    margin-bottom: 50px;
+}
+
+footer{
+    color: #fff;
+    margin-top: 60px;
+    background-color: #000;
+    text-align: center;
+    padding: 10px;
+}
