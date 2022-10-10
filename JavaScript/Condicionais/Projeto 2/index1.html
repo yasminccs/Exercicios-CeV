@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font: normal 20px Arial;
+            background-color: blueviolet;
+        }
+        button{
+            font-size: 18px;
+        }
+        header, footer{
+            color: #fff;
+            text-align: center;
+        }
+        section{
+            background-color: #fff;
+            border-radius: 10px;
+            width: 500px;
+            margin: auto;
+            padding: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.357);
+        }
+        #res > p{
+            text-align: center;
+        }
+        footer{
+            font-style: italic;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div id="datas">
+            <p>Ano de nascimento: <input type="number" name="year" id="year"></p>
+            <p>Sexo: <input type="radio" name="gen" id="masc" checked> Masculino <input type="radio" name="gen" id="fem"> Feminino</p>
+            <p><button type="buton" onclick="verify()">Verificar</button></p>
+        </div>
+        <div id="res">
+            <p>
+                Preencha os dados acima para ver o resultado!
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Copyright</p>
+    </footer>
+    <script>
+       function verify(){
+        const year = document.querySelector('year').value
+        const bith= Number(year.value)
+        const genero = document.querySelector('input[name="gen"]:checked').value
+       }
+    </script>
+</body>
+</html>

@@ -22,10 +22,12 @@
             let res = document.querySelector('#res')
             let txt = String(txt1.value)
             if(txt == "Brasil"){
-                res.innerHTML = `<p>Vivendo em ${txt}. Você é <strong>brasileiro</strong>.</p>`
+                res.innerHTML = `<p>Vivendo em <strong>${txt}</strong>. Você é <strong>brasileiro</strong>.</p>`
             } else {
-                res.innerHTML = `<p>Vivendo em ${txt}. Você é <strong>estrangeiro</strong>.</p>`
+                res.innerHTML = `<p>Vivendo em <strong>${txt}</strong>. Você é <strong>estrangeiro</strong>.</p>`
             }
+            txt1.value = ''
+            txt1.focus()
          }
     </script>
 </body>

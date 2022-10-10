@@ -16,9 +16,6 @@
     div#res{
       margin-top: 20px;   
     }
-    .clicarDiv{
-      font: normal 9pt arial;
-    }
   </style>
 </head>
 
@@ -27,26 +24,26 @@
     <h1>Soma de Valores</h1>
     <input type="number" name="text1" id="text1"> +
     <input type="number" name="text2" id="text2">
-    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" id="btn" value="Somar">
     <div id="res"></div>
-    <div class="clicarDiv">Clique (só teste)</div>
 
     <script>
-      function somar() {
-      let txt1 = document.getElementById('text1')
-      let txt2 = document.getElementById('text2')
-      let res = document.getElementById('res')
-      let n1 = Number(txt1.value)
-      let n2 = Number(txt2.value)
-      let s = n1 + n2
-      res.innerHTML = `A soma entre ${n1} e ${n2} é <strong>${s}.</strong>`
-      }
+  const btn = document.querySelector('#btn')
+  btn.addEventListener('click', sum)
 
-      let test = document.querySelector('.clicarDiv')
-      test.addEventListener('click', clicar)
-      function clicar(evento){
-        console.log(evento)
+  function sum(){
+    const input1 = document.querySelector('#text1')
+    const input2 = document.querySelector('#text2')
+    const result = document.querySelector('#res')
+    const nmr = Number(input1.value)
+    const nmr1 = Number(input2.value)
+    const total = nmr+nmr1
+      if(nmr === 0 || nmr1 === 0){
+          alert('Campo vazio.')
+      } else {
+          result.innerHTML = `O resultado da soma entre ${nmr} e ${nmr1} é <strong>${total}</strong>.`
       }
+  }
     </script>
 </body>
 </html> 
