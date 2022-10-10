@@ -17,7 +17,7 @@ header{
 }
 
 header > h1{
-    font-size: 130px;
+    font-size: 10vw;
     font-variant: small-caps;
     font-family: 'Passion One', cursive;
 }
@@ -32,25 +32,30 @@ a:hover{
 
 section{
     padding: 10vh 0px 10vh 30px;
-    font-size: 50px;
-    font-weight: normal;
+    font-size: 3.5vw;
     line-height: 2em;
     font-family: 'Sriracha', cursive;
+}
+
+section > p{
+    padding-bottom: 1em;
 }
 
 section#p2{
     background: #fff url(img/background001.jpg) center center no-repeat fixed;
     background-size: cover;
 }
+
+section.image{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.290);
+}
+
 section.image > p{
     color: #fff;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.491);
     padding: 10px;
-}
-
-#p3>p, #p5>p{ 
-    margin-bottom: 50px;
+    text-shadow: 1px 1px 0px black;
 }
 
 section#p4{
