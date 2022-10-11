@@ -55,8 +55,16 @@
     <script>
        function verify(){
         const year = document.querySelector('year').value
-        const bith= Number(year.value)
+        const yearBith= Number(year.value)
+        const date = new Date()
+        const yearAtual = date.getFullYear()
+        const res = document.querySelector('#res')
+        const birth = yearAtual - yearBith
         const genero = document.querySelector('input[name="gen"]:checked').value
+
+        if(genero === 'Masculino' && birth >= 13){
+            res.innerHTML = `Você é criança.`
+        }
        }
     </script>
 </body>
