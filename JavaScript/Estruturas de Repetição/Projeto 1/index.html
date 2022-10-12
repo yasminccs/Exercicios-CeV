@@ -5,22 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Tabuada</title>
+    <title>Contador</title>
 </head>
+
 <body>
-    <header>
-        <h1>Tabuada</h1>
-    </header>
+    <header><h1>Vamos contar!</h1></header>
     <section>
         <div id="dados">
-            <p>Número: <input type="number" name="num" id="txtn"> <input type="button" value="Gerar tabuada" onclick="gerar()"></p>
+            <p>Início: <input type="number" name="txtI" id="txtI"></p>
+            <p>Fim: <input type="number" name="txtF" id="txtF"></p>
+            <p>Passo: <input type="number" name="txtP" id="txtP"></p>
+            <input type="button" value="Contar" onclick="calcular()">
         </div>
-        <div id="result">
-            <!-- <textarea name="res" id="res" cols="15" rows="21">Digite um número acima.</textarea> -->
-            <select name="res" id="res" size="10">
-                <option id="op" value="msg">Digite um número acima.</option>
-            </select>
-            <!-- <p>Digite um número acima.</p> -->
+        <div id="res">
+            <p>Preparando a contagem...</p>
         </div>
     </section>
     <footer>
@@ -28,4 +26,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

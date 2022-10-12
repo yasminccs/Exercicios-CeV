@@ -11,7 +11,6 @@ function verificar(){
         let idade = ano - nmr
         let genero
         let img = document.createElement('img')
-        img.setAttribute('id', 'foto')
         if(fsex[0].checked){
             genero = 'Homem'
             if(idade >= 0 && idade < 10){

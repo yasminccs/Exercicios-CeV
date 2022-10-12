@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(128, 128, 6);
     font: normal 15pt arial;
+    background-color: blue;
 }
 
 header{
@@ -11,19 +11,18 @@ header{
 section{
     background-color: white;
     border-radius: 10px;
-    text-align: center;
     padding: 15px;
     width: 500px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.374);
     margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.374);
 }
 
-#op{
-    font-weight: bolder;
+#res{
+    padding-top: 15px;
 }
 
 input{
-    font: normal 15px arial;
+    font: normal 13pt arial;
 }
 
 footer{

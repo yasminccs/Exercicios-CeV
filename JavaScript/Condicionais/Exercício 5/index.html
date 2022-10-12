@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições #5</title>
+    <style>
+        body, input{
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dias da semana</h1>
+    Clique no botão ao lado para ver seu dia da semana atual: <input type="button" value="Verificar" onclick="verific()">
+    <div res></div>
+
+    <script>
+        function verific(){
+            let res =document.querySelector('#res')
+            let now = new Date()
+            let day = now.getDay()
+            switch(day){
+            case 0:
+                alert('Seu dia da semana é Domingo.')
+                break
+            case 1:
+                alert('Seu dia da semana é Segunda.')
+                break
+            case 2:
+                alert('Seu dia da semana é Terça.')
+                break
+            case 3:
+                alert('Seu dia da semana é Quarta.')
+                break
+            case 4:
+                alert('Seu dia da semana é Quinta.')
+                break
+            case 5:
+                alert('Seu dia da semana é Sexta.')
+                break
+            case 6: 
+                alert(`Seu dia da semana é Sábado.`)
+                break
+        }
+        } 
+    </script>
+</body>
+</html>

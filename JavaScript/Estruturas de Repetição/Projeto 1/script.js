@@ -1,50 +1,28 @@
-//usando select + options da aula
-function gerar(){
-    let txt = document.querySelector('#txtn')
+function calcular(){
+    let txtI = document.querySelector('#txtI')
+    let txtF = document.querySelector('#txtF')
+    let txtP = document.querySelector('#txtP')
     let res = document.querySelector('#res')
-    if(txt.value.length == 0){
-        alert('Campo vazio. Por favor, digite um número.')
+    if(txtI.value.length == 0 || txtF.value.length == 0 || txtP.value.length == 0){
+        res.innerHTML = `Impossível contar.`
     } else {
-        let n = Number(txt.value)
-        res.innerHTML = ``
-        for(let i = 1; i <= 10; i++){
-            let option = document.createElement('option')
-            option.text = `${n} x ${i} = ${n*i}`
-            res.appendChild(option)
+        res.innerHTML = `Contando: <br>`
+        let i = Number(txtI.value)
+        let f = Number(txtF.value)
+        let p = Number(txtP.value)
+        if(p <= 0){
+            alert('Passo inválido. Considerando PASSO 1.')
+            p = 1
         }
+        if(i < f){
+            for(let c = i; c <= f; c += p){
+                res.innerHTML += `${c} \u{1F449} `
+            }
+        } else {
+            for(let c = i; c >= f; c -= p){
+                res.innerHTML += `${c} \u{1F449} `
+            }
+        }
+        res.innerHTML += `\u{1F3C1}`
     }
-}
-
-//usando textarea
-
-// function gerar(){
-//     let txt = document.querySelector('#txtn')
-//     let res = document.querySelector('#res')
-//     if(txt.value.length == 0){
-//         alert('Campo vazio. Por favor digite um número.')
-//     } else {
-//         let n = Number(txt.value)
-//         res.innerHTML = `Tabuada do ${n}:     `
-//         for(let i = 1; i <= 10; i++){
-//             res.innerHTML += `${n} x ${i} = ${n*i}
-//                     `
-//         }
-//     }
-// }
-
-
-//usando div
-
-// function gerar(){
-//     let txt = document.querySelector('#txtn')
-//     let res = document.querySelector('#res')
-//     if(txt.value.length == 0){
-//         alert('Campo vazio. Por favor, digite um número')
-//     } else {
-//         let n = Number(txt.value)
-//         res.innerHTML = `<strong>Tabuada do ${n}:</strong> <br>`
-//         for(let i = 0; i <= 10; i++){
-//             res.innerHTML += `${n} x ${i} = ${n*i} <br>`
-//         }
-//     }
-// }
+} 
