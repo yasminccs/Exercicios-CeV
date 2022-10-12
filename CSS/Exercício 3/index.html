@@ -7,17 +7,29 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(127, 66, 66);
+            background-color: rgb(63, 35, 35);
         }
         h1{
             color: white;
             text-align: center;
         }
         table{
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
             background-color: white;
             margin: auto;
+            position: relative;
+        }
+        thead > tr > th{ /*fazer cabeçalho fixo*/
+            position: sticky; /*ficar grudado*/
+            top: -1px; /*ficar grudado no topo e sem espaçamento em cima*/
+            background-color: rgb(50, 48, 48);
+        }
+        caption{
+            color: black;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
         }
         td, th{
             border: 1px solid black;
@@ -25,10 +37,15 @@
         }
         thead, tfoot{
             color: white;
-            background-color: rgb(103, 99, 99);
+            background-color: rgb(50, 48, 48);
         }
         td.num{
             text-align: right;
+        }
+        tbody > tr:nth-child(2n-1){ /*efeito zebrado => pd usar tb 2n, 3n ou 2n-1*/
+            background-color: lightgray;
+            text-decoration: underline;
+            color: rgb(68, 68, 68);
         }
     </style>
     <title>Treinando Tabelas</title>
@@ -49,9 +66,10 @@
                   th, tr, td
         -->
 <table>
+    <caption>Unidades Federativas</caption>
     <thead>
-        <th>Estado</th>
-        <th style="width: 100px;">População</th>
+        <th scope="col">Estado</th> <!--Scope = escopo do dado, por exemplo, os dados de "Estado" vem logo abaixo dele (ou seja, coluna)-->
+        <th scope="col" style="width: 100px;">População</th>
     </thead>
     <tbody>
         <tr>
@@ -165,7 +183,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td class="num">215 208 501</td>
         </tr>
     </tfoot>
