@@ -29,60 +29,65 @@
         th.gen{
             font-weight: bold;
         }
+        #container{
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
-    <table>
-        <caption>Filmes Favoritos</caption>
-        <tr>
-           <thead>
+    <div id="container">
+        <table>
+            <caption>Filmes Favoritos</caption>
             <tr>
-                <th scope="col">Grupo</th>
-                <th scope="col">Nomes</th>
-                <th scope='colgroup' colspan="3">Filmes</th>
+               <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope='colgroup' colspan="3">Filmes</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <th scope='rowgroup' class="gen" rowspan="3">Mulheres</th>
+                        <td>Ana Maria Santos</td>
+                        <td>Alien</td>
+                        <td>Rambo</td>
+                        <td>Vingadores</td>
+                    </tr>
+                    <tr>
+                        <td>Beatriz Souza</td>
+                        <td>Hulk</td>
+                        <td>Inception</td>
+                        <td>Batman</td>
+                    </tr>
+                    <tr>
+                        <td>Cláudia Melo</td>
+                        <td>Oblivion</td>
+                        <td>Matrix</td>
+                        <td>Big Hero</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" class="gen" rowspan="3">Homens</th>
+                        <td>Bruno Mendonça</td>
+                        <td>Intocáveis</td>
+                        <td>Amnésia</td>
+                        <td>Gladiador</td>
+                    </tr>
+                    <tr>
+                        <td>Daniel Lourenço</td>
+                        <td>Wall-E</td>
+                        <td>Oldboy</td>
+                        <td>Danal</td>
+                    </tr>
+                    <tr>
+                        <td>Fabiano Mota</td>
+                        <td>Star Wars 5</td>
+                        <td>Taxi Driver</td>
+                        <td>Toy Story</td>
+                    </tr>
+                </tbody>
+               </thead>
             </tr>
-            <tbody>
-                <tr>
-                    <th scope='rowgroup' class="gen" rowspan="3">Mulheres</th>
-                    <td>Ana Maria Santos</td>
-                    <td>Alien</td>
-                    <td>Rambo</td>
-                    <td>Vingadores</td>
-                </tr>
-                <tr>
-                    <td>Beatriz Souza</td>
-                    <td>Hulk</td>
-                    <td>Inception</td>
-                    <td>Batman</td>
-                </tr>
-                <tr>
-                    <td>Cláudia Melo</td>
-                    <td>Oblivion</td>
-                    <td>Matrix</td>
-                    <td>Big Hero</td>
-                </tr>
-                <tr>
-                    <th scope="rowgroup" class="gen" rowspan="3">Homens</th>
-                    <td>Bruno Mendonça</td>
-                    <td>Intocáveis</td>
-                    <td>Amnésia</td>
-                    <td>Gladiador</td>
-                </tr>
-                <tr>
-                    <td>Daniel Lourenço</td>
-                    <td>Wall-E</td>
-                    <td>Oldboy</td>
-                    <td>Danal</td>
-                </tr>
-                <tr>
-                    <td>Fabiano Mota</td>
-                    <td>Star Wars 5</td>
-                    <td>Taxi Driver</td>
-                    <td>Toy Story</td>
-                </tr>
-            </tbody>
-           </thead>
-        </tr>
-    </table>
+        </table>
+    </div>
 </body>
 </html>
