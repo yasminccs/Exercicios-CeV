@@ -20,19 +20,20 @@ function addNumber(){
 }
 
 function final(){
-    let op = document.querySelector('option')
+    const result = document.querySelector('#result')
+    const ul = document.createElement('ul')
+    result.appendChild(ul)
     if(arr.length === 0){
         alert('Adicione um número antes de finalizar!')
     } else {
-        const result = document.querySelector('#result')
-        result.innerHTML += `Ao todo, temos ${arr.length} número(s) cadastrado(s).<br>`
-        result.innerHTML += `O maior valor digitado foi ${Math.max(...arr)}.<br>`
-        result.innerHTML += `O menor valor digitado foi ${Math.min(...arr)}.<br>`
+        result.innerHTML += `<li>Ao todo, temos ${arr.length} número(s) cadastrado(s).</li>`
+        result.innerHTML += `<li>O maior valor digitado foi ${Math.max(...arr)}.</li>`
+        result.innerHTML += `<li>O menor valor digitado foi ${Math.min(...arr)}.</li>`
         let sum = arr.reduce((acc, element) => {
             return acc + element
         }, 0)
-        result.innerHTML += `Somando todos os valores temos: ${sum}.<br>`
+        result.innerHTML += `<li>Somando todos os valores temos: ${sum}.</li>`
         let media = sum / arr.length
-        result.innerHTML += `A média dos valores digitados é ${Math.round(media)}.<br>`
+        result.innerHTML += `<li>A média dos valores digitados é ${Math.round(media)}.</li>`
     }
 }
