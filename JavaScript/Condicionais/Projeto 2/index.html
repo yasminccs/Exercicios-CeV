@@ -4,27 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de idade</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Verificador de Idade</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            font: normal 20px Arial;
+        }
+        header, footer{
+            color: white;
+            text-align: center;
+        }
+        #res{
+          text-align: center;
+        }
+        section{
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.374);
+        }
+        input{
+            font: normal 18px Arial;
+        }
+        button{
+            font-size: 18px;
+        }
+        footer{
+            font-style: italic;
+        }
+    </style>
 </head>
-<body>
+  <body>
     <header>
-        <h1>Verificador de Idade</h1>
+      <h1>Verificador de Idade</h1>
     </header>
     <section>
-        <div>
-          <p>Ano de nascimento: <input type="number" name="txtano" id="txtano" min="0"></p>
-          <p>Sexo: <input type="radio" name="radsex" id="mas" checked> Masculino <input type="radio" name="radsex" id="fem"> Feminino</p>
-         <input type="button" value="Verificar" onclick="verificar()">
-        </div>
-        
-        <div id="res"><p>Preencha os dados acima para ver o resultado!</p></div>
+      <div>
+        <p>Ano de nascimento: <input type="number" name="num" id="num"></p>
+        <p>Sexo: <input type="radio" name="sex" id="masc" checked> Masculino <input type="radio" name="sex" id="fem"> Feminino</p>
+        <button type="button" onclick="verify()">Verificar</button>
+      </div>
+      <div id="res">
+        <p>Preencha os dados acima para ver o resultado!</p>
+      </div>
     </section>
     <footer>
-        <p>&copy; Copyright</p>
+      <p>&copy; Copyright</p>
     </footer>
 </body>
 </html>
-
-<!--REFAZER-->
