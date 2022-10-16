@@ -3,8 +3,7 @@ const arr = []
 function addNumber(){
     const nmr = document.querySelector("#nmr")
     const input = Number(nmr.value)
-    const indc = arr.includes(input)
-    if(input === 0 || input < 0 || input > 100 || indc){
+    if(input === 0 || input < 0 || input > 100 || arr.includes(input)){
         alert('Valor inválido ou já encontrado na lista.')
     } 
     else {
