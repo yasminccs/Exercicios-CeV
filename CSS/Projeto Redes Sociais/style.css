@@ -9,6 +9,19 @@ body{
     background-size: cover;
 }
 
-#imgIphone{
-    background-color: aqua;
+#iphone{
+    height: 99vh;
+    background-image: url(img/frame-iphone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img#tela-inicial{
+    height: 76vh;
+    margin-bottom: -9px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.290); /*nao funciona*/
 }
