@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff url(img/fundo-madeira.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+#imgIphone{
+    background-color: aqua;
+}
