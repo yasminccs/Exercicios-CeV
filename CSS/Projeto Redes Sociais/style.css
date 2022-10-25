@@ -5,15 +5,9 @@
 }
 
 html, body{
-    /* height: 100vh;
-    width: 100vw; */
     background: #fff url(img/fundo-madeira.jpg) center center no-repeat fixed;
     background-size: cover;
 }
-
-/* main{
-    height: 99vh;
-} */
 
 #iphone{
     height: 99vh;
@@ -24,9 +18,4 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#tela-inicial{
-    height: 76vh;
-    margin-bottom: -9px;
 }
