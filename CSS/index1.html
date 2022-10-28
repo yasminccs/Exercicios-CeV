@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
   <body>
-   
+    <h1>Formulário básico</h1>
+   <form action="cadastro.js" method="post">
+    <p>
+      <label for="name">Nome: </label>
+      <input type="text" name="name" id="name" required minlength="5" placeholder="digite aqui" autocomplete="name">
+    </p>
+    <p>
+      <label for="password">Senha: </label>
+      <input type="password" name="password" id="password" required minlength="8" autocomplete="current-password">
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+   </form>
 </body>
 </html>
