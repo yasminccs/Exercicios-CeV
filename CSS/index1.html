@@ -9,22 +9,34 @@
   <body>
     <h1>Formulário básico</h1>
    <form action="cadastro.js" method="post">
-    <p>
-      <label for="name">Nome: </label>
-      <input type="text" name="name" id="name" required minlength="5" placeholder="digite aqui" autocomplete="name">
-    </p>
-    <p>
-      <label for="password">Senha: </label>
-      <input type="password" name="password" id="password" required minlength="8" autocomplete="current-password">
-    </p>
-    <p>
-      <label for="media">Nota: </label>
-      <input type="number" name="media" id="media" required min="0" max="2" step="0.1" value="7">
-    </p>
-    <p>
-      <label for="letivo">Data e hora da prova: </label>
-      <input type="datetime-local" name="letivo" id="letivo" value="2022-10-29 20:20">
-    </p>
+    <fieldset>
+      <legend>Dados pessoais</legend>
+      <p>
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name" required minlength="5" placeholder="digite aqui" autocomplete="name">
+      </p>
+      <p>
+        <label for="password">Senha: </label>
+        <input type="password" name="password" id="password" required minlength="8" autocomplete="current-password">
+      </p>
+      <p>
+        <label for="media">Nota: </label>
+        <input type="number" name="media" id="media" required min="0" max="10" step="0.1" value="7" required>
+      </p>
+      <p>
+        <label for="letivo">Data e hora da prova: </label>
+        <input type="datetime-local" name="letivo" id="letivo" value="2022-10-29 20:20" required>
+      </p>
+      <p>
+        <label for="tel">Telefone: </label>
+        <input type="tel" name="tel" id="tel" autocomplete="tel" placeholder="(xx) xxxx-xxxx" pattern="^(\d{2}\)[0-9]{4,5}-[0-9]{4}$" required>
+        <!--estudar RegEx (expressoes regulares)-->
+      </p>
+      <p>
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" autocomplete="email" required>
+      </p>
+    </fieldset>
     <p>
       <input type="submit" value="Enviar">
       <input type="reset" value="Limpar">
@@ -32,3 +44,5 @@
    </form>
 </body>
 </html>
+
+<!--não funciona em todos os navegadores alguns comandos-->
