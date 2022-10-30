@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
 </head>
   <body>
-    <h1>Formulário básico</h1>
+    <h1>Formulário</h1>
    <form action="cadastro.js" method="post">
     <fieldset>
       <legend>Dados pessoais</legend>
@@ -43,6 +43,36 @@
       <p>
         <label for="nivel">Nível de satisfação: </label>
         <input type="range" name="nivel" id="nivel" min="1" max="5" value="2"> <!--vai de 0 a 100 sem config-->
+      </p>
+      <p>
+        <label for="estado">Estado: </label>
+        <select name="estados" id="estados"> <!--só dá essas options, não deixa add outro-->
+          <option value="" disabled selected>---Selecione</option>
+          <optgroup label="Região Sudeste">
+            <option value="rj">Rio de Janeiro</option>
+            <option value="sp">São Paulo</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="es">Espírito Santo</option>
+          </optgroup>
+          <optgroup label="Região Sul">
+            <option value="pr">Paraná</option>
+            <option value="sc">Santa Catarina</option>
+            <option value="rs">Rio Grande do Sul</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        <label for="profissao">Profissão: </label>
+        <input type="text" name="pfs" id="pfs" list="iprofss">
+        <datalist id="iprofss"> <!--sugere options mas pode digittar outras coisas-->
+          <option>Administrador</option>
+          <option>Desenvolvedor</option>
+          <option>Professor</option>
+        </datalist>
+      </p>
+      <p>
+        <label for="msg">Mensagem: </label><br>
+        <textarea placeholder="Escreva uma mensagem..." name="msg" id="msg" cols="30" rows="6"></textarea>
       </p>
     </fieldset>
     <p>
