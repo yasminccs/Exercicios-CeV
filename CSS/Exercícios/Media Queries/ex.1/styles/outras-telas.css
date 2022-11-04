@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px){
+    #burguer{
+        display: none;
+    } 
+    nav {
+        display: block;
+        background-color: rgb(123, 123, 123);
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    article{
+        width: 768px;
+    }
+}

@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css" media="screen">
+    <link rel="stylesheet" href="styles/outras-telas.css">
     <link rel="stylesheet" href="styles/print.css" media="print">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Site para impressão</title>
 </head>
-<body>
+<body onresize="size()">
     <header>
         <h1>Hey notícias</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="add()">menu</span>
+        <nav>
             <ul>
-                <li>Esportes</li>
-                <li>Saúde</li>
-                <li>Tecnologia</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Mais notícias</a></li>
             </ul>
-        </menu>
+        </nav>
     </header>
     <main>
         <article>
@@ -32,13 +36,26 @@
             </p>
             
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolor enim itaque, eius, et totam dolores sint cum consequatur iure sequi maxime porro praesentium fugit explicabo? Omnis ut earum dicta sequi perferendis odit, itaque excepturi quod neque, consequatur quasi iusto!
-            </p>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ipsam consectetur laudantium temporibus a! Dolorum delectus quod impedit exercitationem aut ipsa maiores, qui accusamus at? Nam officiis fuga inventore atque?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolor enim itaque, eius, et totam dolores sint cum consequatur iure sequi maxime porro praesentium fugit explicabo? Omnis ut earum dicta sequi.
             </p>
         </article>
     </main>
+    <script>
+        const nav = document.querySelector('nav')
+        function size(){
+           if(window.innerWidth >= 768){
+            nav.style.display = 'block'
+           } else {
+            nav.style.display === 'none'
+           }
+        }
+        function add() {
+            if(nav.style.display === 'none'){
+                nav.style.display = 'block'
+            } else {
+                nav.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
