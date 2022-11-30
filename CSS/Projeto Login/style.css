@@ -25,7 +25,7 @@ main{
 }
 
 section#container{
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 header > h1{
@@ -64,7 +64,7 @@ span{
 #email, #password{
     background-color: #99d3ed;
     height: 35px;
-    padding-right: 8px;
+    padding-right: 19px;
     padding-left: 6px;
     margin-bottom: 4px;
     border: none;
