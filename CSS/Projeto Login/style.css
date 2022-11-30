@@ -6,9 +6,10 @@
 }
 
 body{
-    background: #5e2e82;
-    background: linear-gradient(180deg, rgba(94,46,130,1) 0%, #4b9199 100%) no-repeat;
-    background-attachment: fixed;
+    background-color: #5e2e82;
+    /* background: #5e2e82;
+    background: linear-gradient(180deg, rgba(94,46,130,1) 0%, #4b9199 100%) no-repeat; */
+    /* background-attachment: fixed; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,13 +18,76 @@ body{
 
 main{
     background-color: #fff;
-    height: 350px;
-    max-width: 30em;
-    padding: 15px;
-    border-radius: 15px;
+    height: 515px;
+    width: 250px;
+    border-radius: 20px;
     box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.297);
 }
 
-h1{
+section#container{
+    padding: 10px 15px;
+}
+
+header > h1{
     text-align: center;
+    padding-bottom: 10px;
+}
+
+header > p{
+    font-size: .8rem;
+    padding-bottom: 8px;
+}
+
+img#ft{
+    height: 200px;
+    width: 250px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+div#btns, div#inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+#inputEmail, #inputPassword{
+    background-color: #5e2e82;
+    margin-bottom: 6px;
+    padding-top: 4px;
+    padding-left: 3px;
+    border-radius: 7px;
+}
+
+span{
+    color: #fff;
+}
+
+#email, #password{
+    background-color: #99d3ed;
+    height: 35px;
+    padding-right: 8px;
+    padding-left: 6px;
+    margin-bottom: 4px;
+    border: none;
+    border-radius: 7px;
+}
+
+button#enter{
+    background-color: #5a989e;
+    color: #fff;
+    margin-bottom: 6px;
+    border: none;
+    padding: 9px;
+    border-radius: 5px;
+}
+button#loss{
+    color: #5a989e;
+    margin-bottom: 6px;
+    border: 1px solid #5a989e;
+    padding: 9px;
+    border-radius: 7px;
+}
+
+span#mail{
+    color: #5a989e;
+    font-size: 1em;
 }

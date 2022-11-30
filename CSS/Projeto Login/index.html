@@ -5,22 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Login</title>
 </head>
 <body>
     <main>
+
+    <section>
+        <img id="ft" src="img/pexels-expect-best-323705.jpg" alt="ft geral">
+    </section>
+
+    <section id="container">
+
         <header id="initial">
             <h1>Login</h1>
             <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
         </header>
+
         <div id="inputs">
-            <input type="email" placeholder="seu e-mail" name="email" id="email" required>
-            <input type="password" placeholder="sua senha" name="password" id="password" required>
+
+            <div id="inputEmail">
+                <label for="iconPerson"><span class="material-symbols-outlined">
+                    person
+                    </span></label>
+                <input title="Preencha este campo." type="email" placeholder="seu e-mail" name="email" id="email" required>
+            </div>
+
+            <div id="inputPassword">
+                <label for="iconKey"><span class="material-symbols-outlined">
+                    key
+                    </span></label>
+                <input title="Preencha este campo." type="password" placeholder="sua senha" name="password" id="password" required>
+            </div>
         </div>
+
         <div id="btns">
-            <button type="button">Entrar</button>
-            <button type="button">Esqueci a senha</button>
+            <button id="enter" type="button">Entrar</button>
+            <button id="loss" type="button">Esqueci a senha <span id="mail" class="material-symbols-outlined">
+                mail
+                </span></button>
         </div>
+        
+    </section>
     </main>
 </body>
 </html>
