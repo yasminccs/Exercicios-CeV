@@ -49,26 +49,29 @@ div#btns, div#inputs{
     flex-direction: column;
 }
 
-#inputEmail, #inputPassword{
+div#inputEmail, div#inputPassword{
     background-color: #5e2e82;
+    border-radius: 7px;
     margin-bottom: 6px;
     padding-top: 4px;
     padding-left: 3px;
-    border-radius: 7px;
 }
 
 span{
     color: #fff;
 }
 
-#email, #password{
+input#email, input#password{
     background-color: #99d3ed;
     height: 35px;
-    padding-right: 19px;
-    padding-left: 6px;
+    padding: 3px 19px 0px 6px;
     margin-bottom: 4px;
     border: none;
     border-radius: 7px;
+}
+
+input#email:focus, input#password:focus{
+    background-color: #fff;
 }
 
 button#enter{
@@ -78,16 +81,53 @@ button#enter{
     border: none;
     padding: 9px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
 }
+
+button#enter:hover{
+    background-color: #34595d;
+}
+
 button#loss{
-    color: #5a989e;
+    color: #34595d;
     margin-bottom: 6px;
     border: 1px solid #5a989e;
     padding: 9px;
     border-radius: 7px;
+    cursor: pointer;
+}
+
+button#loss:hover{
+    background-color: #84ced5;
+    transition: .2s;
 }
 
 span#mail{
-    color: #5a989e;
+    color: #34595d;
     font-size: 1em;
+}
+
+@media screen and (min-width: 768px){
+    main {
+        display: flex;
+        height: 55vh;
+        width: 85vw;
+    }
+
+    img#ft{
+        height: 55vh;
+        width: 220px;
+        border-radius: 20px 00px 00px 20px;
+    }
+
+    input#email, input#password{
+        padding-right: 0px;
+        width: 92%;
+    }
+
+    button#enter, button#loss{
+        padding: 12px;
+        font-size: 1em;
+    }
 }
