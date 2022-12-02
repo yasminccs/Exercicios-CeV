@@ -115,6 +115,8 @@ span#mail{
         display: flex;
         height: 294px;
         width: 85vw;
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
     }
 
     img#ft{
@@ -128,7 +130,7 @@ span#mail{
     }
 
     button#enter, button#loss{
-        padding: 9px;
+        padding: 7px;
         font-size: 1em;
     }
 }
