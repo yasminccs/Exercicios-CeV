@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
-<!-- how to make the input grow and together with the rest responsively in css? -->
+
 <body>
     <main>
 
         <section><img id="ft" src="img/predio.jpg" alt="ft geral"></section>
 
-    <section id="container">
+    <form action="cadastro.js" method="post" id="container">
 
         <header id="initial">
             <h1>Login</h1>
@@ -37,18 +37,18 @@
                 <label for="iconKey"><span class="material-symbols-outlined">
                     key
                     </span></label>
-                <input title="Preencha este campo." type="password" placeholder="sua senha" name="password" id="password" required>
+                <input title="Preencha este campo." type="password" placeholder="sua senha" name="password" id="password" minlength="8" required>
             </div>
         </div>
 
         <div id="btns">
-            <button id="enter" type="button">Entrar</button>
-            <button id="loss" type="button">Esqueci a senha <span id="mail" class="material-symbols-outlined">
+            <button id="enter" type="submit">Entrar</button>
+            <button id="loss" type="submit">Esqueci a senha <span id="mail" class="material-symbols-outlined">
                 mail
                 </span></button>
         </div>
         
-    </section>
+    </form>
     </main>
 </body>
 </html>
