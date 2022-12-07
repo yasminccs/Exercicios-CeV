@@ -61,7 +61,7 @@ span{
 input#email, input#password{
     background-color: #99d3ed;
     height: 35px;
-    padding: 3px 19px 0px 6px;
+    padding: 3px 10px 0px 6px;
     margin-bottom: 4px;
     border: none;
     border-radius: 7px;
