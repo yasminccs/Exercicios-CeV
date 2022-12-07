@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="img/robo.ico" type="image/x-icon">
 
     <title>Login</title>
@@ -18,7 +16,7 @@
 
         <section><img id="ft" src="img/predio.jpg" alt="ft geral"></section>
 
-    <form action="cadastro.js" method="post" id="container">
+    <form action="cadastro.js" method="post" id="container" autocomplete="on">
 
         <header id="initial">
             <h1>Login</h1>
@@ -28,25 +26,19 @@
         <div id="inputs">
 
             <div id="inputEmail">
-                <label for="iconPerson"><span class="material-symbols-outlined">
-                    person
-                    </span></label>
-                <input title="Preencha este campo." type="email" placeholder="seu e-mail" name="email" id="email" required>
+                <span class="material-icons">&#xe7fd;</span>
+                <input title="Preencha este campo." type="email" placeholder="seu e-mail" autocomplete="email" name="email" id="email" required>
             </div>
 
             <div id="inputPassword">
-                <label for="iconKey"><span class="material-symbols-outlined">
-                    key
-                    </span></label>
-                <input title="Preencha este campo." type="password" placeholder="sua senha" name="password" id="password" minlength="8" required>
+                <span class="material-icons">&#xe73c;</span>
+                <input title="Preencha este campo." type="password" autocomplete="current-password" placeholder="sua senha" name="password" id="password" minlength="8" required>
             </div>
         </div>
 
         <div id="btns">
             <button id="enter" type="submit">Entrar</button>
-            <button id="loss" type="submit">Esqueci a senha <span id="mail" class="material-symbols-outlined">
-                mail
-                </span></button>
+            <button id="loss" type="submit">Esqueci a senha</span></button>
         </div>
         
     </form>
