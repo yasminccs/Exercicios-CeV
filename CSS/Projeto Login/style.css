@@ -103,7 +103,7 @@ button#loss:hover{
 
 span#mail{
     color: #34595d;
-    font-size: 1em;
+    font-size: .8em;
 }
 
 @media screen and (min-width: 768px){
