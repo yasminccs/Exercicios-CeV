@@ -66,6 +66,7 @@ input#email, input#password{
     margin-bottom: 4px;
     border: none;
     border-radius: 7px;
+    outline: none;
 }
 
 input#email:focus, input#password:focus{
